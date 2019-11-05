@@ -91,6 +91,8 @@ let arr = [1, 2, 3, 4, 5];
 
 //answer: polynpmial complexity O(n^2) because the number of operations increase by ^2
 
+
+
 //7. Compute the sequence
 function compute(num) {
   let result = [];
@@ -143,9 +145,11 @@ function compute(num) {
 
 // console.log(TOH(4, 'a', 'c', 'b'));
 
-//12: Iterative version- Solve the first 7 problems from yesterday iteratively.
+///////////////////////////////////////////////// 12: Iterative version- Solve the first 7 problems from yesterday iteratively.
 
-//1. Counting sheep
+
+//linear complexity
+//1. Counting sheep 
 
 // function countSheep(num) {
 //   for (let i = num; i > 0; i--) {
@@ -158,6 +162,8 @@ function compute(num) {
 
 // console.log(countSheep(3));
 
+
+//linear complexity
 //2: PowerCalculator
 
 // function PowerCalculator(base, exponent) {
@@ -181,6 +187,7 @@ function compute(num) {
 
 // console.log(PowerCalculator(5, 2));
 
+//linear complexity
 //3: Reverse String
 
 // function reverse(str) {
@@ -193,6 +200,8 @@ function compute(num) {
 
 // console.log(reverse('hello'));
 
+
+//linear complexity
 //4: nTh trianglular number
 
 // function triNum(num) {
@@ -205,6 +214,8 @@ function compute(num) {
 
 // console.log(triNum(5));
 
+
+//log complexity
 //5: String Splitter
 
 // function split(str, sep) {
@@ -221,6 +232,7 @@ function compute(num) {
 
 // console.log(split('20/20/2020', '/'));
 
+//linear complexity
 //6: Fibonacci
 
 // function fib(n) {
@@ -233,6 +245,7 @@ function compute(num) {
 
 // console.log(fib(8));
 
+//linear complexity
 //7: factorial
 // function factorial(num) {
 //   let result = num;
@@ -244,3 +257,29 @@ function compute(num) {
 // }
 
 // console.log(factorial(4));
+
+
+//////////////////////////////////// recursive big O 
+//countsheep: linear
+
+//powercalculator: linear
+
+//linear
+
+//triangle: linear
+
+//split linear 
+
+//factorial: linear
+
+//fib: linear
+
+//maze: polynomial
+
+//mazeall: polynomial
+
+//anagram: polynomial
+
+//binary: linear
+
+
