@@ -70,3 +70,47 @@ function doubleArrayValues(array) {
 //proportionally increases 
 
 //5. Naive search
+function naiveSearch(array, item) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === item) {
+            return i;
+        }
+    }
+}
+['book', 'cheese', 'milk', 'eggs'], ['eggs']
+
+//answer: Linear O(n) because in the worst case, as the array length increases
+//the number of operations increases
+
+//6. Creating pairs
+function createPairs(arr) {
+    for (let i = 0; i < arr.length; i++) { 
+        for(let j = i + 1; j < arr.length; j++) {
+            console.log(arr[i] + ", " +  arr[j] );
+        }
+    }
+}
+let arr = [1,2,3,4,5]
+//createPairs(arr)
+
+//answer: polynpmial complexity O(n^2) because the number of operations increase by ^2
+
+//7. Compute the sequence
+function compute(num) {
+    let result = [];
+    for (let i = 1; i <= num; i++) {
+
+        if (i === 1) {
+            result.push(0);
+        }
+        else if (i == 2) {
+            result.push(1);
+        }
+        else {
+            result.push(result[i - 2] + result[i - 3]);
+        }
+    }
+    return result;
+}
+//asnwer: linear because depending on the num input the number of operations grows with it
+
